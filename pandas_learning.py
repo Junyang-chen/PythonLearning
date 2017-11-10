@@ -36,4 +36,4 @@ only first one will be called
 
 
 a=Derive(1,2)
-a.sizeof()
+print(a.sizeof())
