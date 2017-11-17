@@ -117,3 +117,16 @@ a = float('inf')
 b = float('nan')
 print(a, b)
 
+# 4.2 iterable
+
+class iterable:
+    def __init__(self, value):
+        self.value = value
+
+    def __iter__(self):
+        return iter(self.value)
+
+a = iterable([1,2,3])
+for i in a:
+    print(i)
+
