@@ -28,3 +28,92 @@ d = OrderedDict()
 d['1'] = 1
 d['2'] = 2
 d['3'] = 3
+
+# 1.12 Counter
+from collections import Counter
+a = [1,1,2,3,1,5]
+d = Counter(a)
+
+# 1.13
+rows = [
+        {'fname': 'Brian', 'lname': 'Jones', 'uid': 1003},
+        {'fname': 'David', 'lname': 'Beazley', 'uid': 1002},
+        {'fname': 'John', 'lname': 'Cleese', 'uid': 1001},
+        {'fname': 'Big', 'lname': 'Jones', 'uid': 1004}
+]
+from operator import itemgetter
+rows_by_fname = sorted(rows, key=itemgetter('fname'))
+rows_by_fname_lambda = sorted(rows, key=lambda x:x['fname'])
+
+# 1.16 filter
+def filter_func(item):
+    if item >0 and item % 2 == 0:
+        return True
+    else:
+        return False
+a = [1,2,3,4,5]
+a = filter(filter_func, a)
+print(a)
+
+# 1.17 subset of dict
+prices = {
+       'ACME': 45.23,
+       'AAPL': 612.78,
+       'IBM': 205.55,
+       'HPQ': 37.20,
+       'FB': 10.75
+}
+p1 = {key:value for key, value in prices.items() if value > 200}
+print(p1)
+
+# 2.1 regular expression
+line = 'asdf fjdk; afed, fjek,asdf, foo'
+import re
+print(re.split(r'[;,\s]\s*', line))
+
+# 2.2 string startswith & endswith
+s = r'www.helper.com'
+print(s.startswith(r'www'))
+print(s.startswith((r'www', r'html',r'ftp')))
+
+# 2.3 match wild card
+from fnmatch import fnmatch, fnmatchcase
+print(fnmatch('test.txt', '*.txt'))
+
+# 2.5 searching and replace text
+date = 'Today is 11/29/2012, we are very excited'
+import re
+print(re.sub(r'(\d+)/(\d+)/(\d+)', r'\3-\1-\2', date))
+
+# 2.10 space strip
+s = ' hello world \n'
+print(s.strip())
+print(s.lstrip())
+print(s.rstrip())
+
+t = '-----hello====='
+print(t.lstrip('-'))
+print(t.rstrip('='))
+
+# string interpolate
+s = '{name} has {n} messages.'
+s.format(name='Guido', n=37)
+
+# text wrap to fixed number of column
+import textwrap
+s = "Look into my eyes, look into my eyes, the eyes, the eyes, \ the eyes, not around the eyes, don't look around the eyes, \ look into my eyes, you're under."
+print(textwrap.fill(s, 70))
+print(textwrap.fill(s, 30))
+
+# 3.2 decimal calculation
+from decimal import Decimal
+a = Decimal('4.2')
+b = Decimal('3.6')
+a + b
+print(a + b)
+
+# 3.7 inf and nan
+a = float('inf')
+b = float('nan')
+print(a, b)
+
