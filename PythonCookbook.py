@@ -130,3 +130,40 @@ a = iterable([1,2,3])
 for i in a:
     print(i)
 
+# 4.9 iterate through combination or permutation
+from itertools import permutations, combinations
+items = ['a', 'b', 'c']
+for i in permutations(items):
+    print(i)
+
+for i in permutations(items, 2):
+    print(i)
+
+for i in permutations(items,1):
+    print(i)
+
+for i in combinations(items, 2):
+    print(i)
+
+# 4.10 iterate through index value pair
+for i, v in enumerate(['a', 'b', 'c']):
+    print("{0}th element is {1}".format(i+1, v))
+
+
+for i, v in enumerate(['a', 'b', 'c'], 1):
+    print("{0}th element is {1}".format(i, v))
+
+# 4.11 zip function of iterating over two iterables
+a = [1, 2, 3]
+b = ['a', 'b', 'c', 'd']
+for x, y in zip(a,b):
+    print(x, y)
+
+# 4.12 iterate on seperate items
+from itertools import chain
+a = set([1,2,3])
+b= set([4,5,6])
+for i in chain(a,b):
+    print(i)
+
+
