@@ -166,4 +166,23 @@ b= set([4,5,6])
 for i in chain(a,b):
     print(i)
 
+# 4.14 nested container
+import collections
+items = [1, 2, [3, 4, [5, 6], 7], 8]
+items2 = ['Dave', 'Paula', ['Thomas', 'Lewis']]
 
+def flatten(container, ignore_type=(str)):
+    for i in container:
+        if isinstance(i, collections.Iterable) and not isinstance(i, ignore_type):
+            # this has to be yield from as flatten(i) is a generator
+            yield from flatten(i)
+        else:
+            yield i
+
+print(list(flatten(items)))
+print(list(flatten(items2)))
+
+# 4.13 generator to read file pipline
+import os
+def gen_file(file_format, dir):
+    for filename in os.list
