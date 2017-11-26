@@ -184,5 +184,99 @@ print(list(flatten(items2)))
 
 # 4.13 generator to read file pipline
 import os
+import fnmatch
+import re
+# find files with format
 def gen_file(file_format, dir):
-    for filename in os.list
+    for filename in os.listdir(dir):
+        if fnmatch.fnmatch(filename, file_format):
+            yield os.path.join(dir, filename)
+
+def gen_open(filenames):
+    for file in filenames:
+        with open(file, 'rt') as f:
+            yield f
+
+def gen_concatenate(iterators):
+    for i in iterators:
+        yield from i
+
+def gen_grep(pattern, lines):
+    pat = re.compile(pattern)
+    for line in lines:
+        if pat.search(line):
+            yield line
+
+logfiles = gen_file('log*.txt', os.path.join(os.getcwd(), 'Samplefiles'))
+file_opener = gen_open(logfiles)
+lines = gen_concatenate(file_opener)
+matched_lines = gen_grep(r'go{2}d', lines)
+for line in matched_lines:
+    print(line)
+
+# 5.12
+import os
+os.path.exists(r'Regex.py')
+os.path.isfile(r'Regex.py')
+os.path.isdir(r'Regex.py')
+os.listdir(os.getcwd())
+
+# 6.1 open csv
+import csv
+with open(r'Samplefiles/sample.csv') as f:
+    f_csv = csv.reader(f)
+    headers = next(f_csv)
+    print(headers)
+    for row in f_csv:
+        print(row)
+
+# 6.2 JSON
+import json
+
+data = {
+'name' : 'ACME',
+'shares' : 100,
+'price' : 542.23
+}
+# dumps and loads are for objects in cache
+json_str = json.dumps(data)
+print(json_str)
+data = json.loads(json_str)
+
+# with easiler read
+print(json.dumps(data, indent=4))
+
+# dump and load are for .json file
+with open(r'Samplefiles/1.json', 'w') as f:
+    json.dump(data, f)
+
+with open(r'Samplefiles/1.json', 'r') as f:
+    data = json.load(f)
+
+# turns a json into a python object
+class JSONobject:
+    def __init__(self, d):
+        self.__dict__ = d
+
+s = json.dumps(data)
+data = json.loads(s, object_hook=JSONobject)
+data.name
+
+# 6.8 RDBMS
+import sqlite3
+db = sqlite3.connect('database.db')
+c = db.cursor()
+c.execute('create table portfolio (symbol text, shares integer, price real)')
+db.commit()
+
+stocks = [
+('GOOG', 100, 490.1),
+('AAPL', 50, 545.75),
+('FB', 150, 7.45),
+('HPQ', 75, 33.2),
+]
+c.executemany('insert into portfolio values (?,?,?)', stocks)
+db.commit()
+
+for row in db.execute('select * from portfolio where price >= ?', (1,)):
+    print(row)
