@@ -280,3 +280,42 @@ db.commit()
 
 for row in db.execute('select * from portfolio where price >= ?', (1,)):
     print(row)
+
+# 7.2 function with only keyword, a bare * is forced to have the behind para be keyword arguments only
+def recv(*, block):
+    pass
+
+recv(1,2,3, block=True)
+
+# 7.3 adding additional information for function
+def add(x:int, y:int) -> int:
+    return x + y
+
+# no type checking will happen, only shown as help()
+print(add(3,1.5))
+help(add)
+
+# 7.7 lambda
+# lambd constant is evaluated at run time
+x = 10
+a = lambda y: x+y
+x = 20
+b = lambda  y:x+y
+print(a(10))
+print(b(10))
+x = 3
+print(a(10))
+
+# to fix x as compile time
+a = lambda y,x=x: x+y
+print(a(10))
+x = 3
+print(a(10))
+
+funcs = [lambda x: x + n for n in range(4)]
+for fun in funcs:
+    print(fun(0))
+
+funcs = [lambda x, n=n: x + n for n in range(4)]
+for fun in funcs:
+    print(fun(0))
