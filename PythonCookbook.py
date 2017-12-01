@@ -319,3 +319,146 @@ for fun in funcs:
 funcs = [lambda x, n=n: x + n for n in range(4)]
 for fun in funcs:
     print(fun(0))
+
+# 7.11 inline callback function
+
+def apply_async(func, args, *, callback):
+    # Compute the result
+    result = func(*args)
+
+    # Invoke the callback with the result
+    callback(result)
+
+# Inlined callback implementation
+from queue import Queue
+from functools import wraps
+
+class Async:
+    def __init__(self, func, args):
+        self.func = func
+        self.args = args
+
+def inlined_async(func):
+    @wraps(func)
+    def wrapper(*args):
+        f = func(*args)
+        result_queue = Queue()
+        result_queue.put(None)
+        while True:
+            result = result_queue.get()
+            try:
+                a = f.send(result)
+                apply_async(a.func, a.args, callback=result_queue.put)
+            except StopIteration:
+                break
+    return wrapper
+
+# Sample use
+def add(x, y):
+    return x + y
+
+@inlined_async
+def test():
+    r = yield Async(add, (2, 3))
+    print(r)
+    r = yield Async(add, ('hello', 'world'))
+    print(r)
+    for n in range(10):
+        r = yield Async(add, (n, n))
+        print(r)
+    print('Goodbye')
+
+if __name__ == '__main__':
+    # Simple test
+    print('# --- Simple test')
+    test()
+
+    print('# --- Multiprocessing test')
+    import multiprocessing
+    pool = multiprocessing.Pool()
+    apply_async = pool.apply_async
+    test()
+
+
+# 8.3 making object support context manager
+
+class RAII(object):
+    def __init__(self, pt):
+        self.pt = pt
+        print("Initializing pointer!")
+
+    def __enter__(self):
+        return self.pt
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        del self.pt
+        print("Pointer is destoryed!")
+
+raii = RAII([])
+with raii as r:
+    r.append(1)
+    r.append(2)
+    print(r)
+print(raii.pt)
+
+# 8.4 saving memory of a large number of instance
+class Date:
+    __slots__ = ['year', 'month', 'day']
+    def __init__(self):
+        pass
+
+# 8.5 Property with getter and setter
+import math
+class circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    @property
+    def area(self):
+        return math.pi * self.radius**2
+
+    @property
+    def permeter(self):
+        return 2*math.pi * self.radius
+
+# 8.11
+class Structure:
+    _fields = []
+    def __init__(self, *args):
+        if len(args) != len(self._fields):
+            raise TypeError("Length should be the same!")
+        for name, arg in zip(self._fields, args):
+            setattr(self, name, arg)
+
+class Stock(Structure):
+    _fields = ['name', 'price', 'share']
+
+s = Stock('ACME', 50, 91.1)
+
+# 8.12 abstract class
+from abc import ABCMeta, abstractmethod
+class IStream(metaclass=ABCMeta):
+    @abstractmethod
+    def read(self, maxbytes=-1):
+        pass
+    @abstractmethod
+    def write(self, data):
+        pass
+
+class SocketStream(IStream):
+    def read(self, maxbytes=-1):
+        pass
+    def write(self, data):
+        pass
+
+# 8.14 make some iterable
+class class_iterable:
+    def __init__(self, content):
+        self.content = content
+
+    def __iter__(self):
+        return iter(self.content)
+
+a = class_iterable([1,2,3])
+for i in a:
+    print(i)
