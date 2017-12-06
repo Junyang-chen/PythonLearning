@@ -462,3 +462,43 @@ class class_iterable:
 a = class_iterable([1,2,3])
 for i in a:
     print(i)
+
+# 8.15 defining more than one constructor
+import datetime
+
+class Date:
+    def __init__(self, year, month, day):
+        self.year = year
+        self.month = month
+        self.day = day
+
+    def __repr__(self):
+        return "{0}-{1}-{2}".format(self.year, self.month, self.day)
+
+    @classmethod
+    def today(cls):
+        today = datetime.datetime.now().date()
+        return cls(today.year, today.month, today.day)
+
+a = Date(2017, 11, 30)
+b = Date.today()
+print(a, b)
+d = Date.__new__(Date)
+print(dir(d))
+
+# 8.16 extend class with mixins
+class LoggingMappingMixin:
+    __slots__ = ()
+    def __getitem__(self, key):
+        print('Getting key:'.format(key))
+        return super().__getitem__(key)
+
+    def __setitem__(self, key, value):
+        print('Setting item:{0} to {1}'.format(key, value))
+        super().__setitem__(key, value)
+
+class LoggingDict(LoggingMappingMixin, dict):
+    pass
+
+a = LoggingDict()
+a[1] = 2
