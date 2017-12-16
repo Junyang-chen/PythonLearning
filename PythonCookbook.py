@@ -502,3 +502,37 @@ class LoggingDict(LoggingMappingMixin, dict):
 
 a = LoggingDict()
 a[1] = 2
+
+
+# 8.23 using reference that won't increase reference counting
+# weakref module
+import weakref
+
+class Node:
+    def __init__(self, value):
+        self._value = value
+        self._parent = None
+        self.children = []
+
+    def __repr__(self):
+        return "Node:{}".format(self._value)
+
+    @property
+    def parent(self):
+        return self._parent if self._parent is None else self._parent()
+
+    @parent.setter
+    def parent(self, node):
+        # self._parent = node
+        self._parent = weakref.ref(node)
+
+    def add_child(self, node):
+        node.parent = self
+        self.children.append(node)
+
+root = Node('parent')
+a = Node('child')
+root.add_child(a)
+print(a.parent)
+del root
+print(a.parent)
