@@ -266,8 +266,8 @@ data.name
 import sqlite3
 db = sqlite3.connect('database.db')
 c = db.cursor()
-c.execute('create table portfolio (symbol text, shares integer, price real)')
-db.commit()
+# c.execute('create table portfolio (symbol text, shares integer, price real)')
+# db.commit()
 
 stocks = [
 ('GOOG', 100, 490.1),
@@ -285,8 +285,8 @@ for row in db.execute('select * from portfolio where price >= ?', (1,)):
 def recv(*, block):
     pass
 
-recv(1,2,3, block=True)
-
+# recv(1,2,3, block=True)
+recv(block=True)
 # 7.3 adding additional information for function
 def add(x:int, y:int) -> int:
     return x + y
@@ -399,7 +399,7 @@ with raii as r:
     r.append(1)
     r.append(2)
     print(r)
-print(raii.pt)
+# print(raii.pt)
 
 # 8.4 saving memory of a large number of instance
 class Date:
@@ -600,4 +600,353 @@ b = logging.getLogger('bar')
 print(a is b )
 c = logging.getLogger('foo')
 print(c is a)
+
+class Spam:
+    def __init__(self, value):
+        self.value = value
+
+import weakref
+_spam_cache = weakref.WeakValueDictionary()
+
+def get_spam(name):
+    if name not in _spam_cache:
+        s = Spam(name)
+        _spam_cache[name] = s
+    else:
+        s = _spam_cache[name]
+    return s
+
+a = get_spam('foo')
+b = get_spam('bar')
+print(a is b )
+c = get_spam('foo')
+print(c is a)
+
+# 9.1 wraper functions
+# adding wraps decorater will perseve the sigiture
+from functools import wraps
+import time
+
+def timethis(func):
+    @wraps(func)
+    def wrappers(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        elapse = time.time() - start
+        print(func.__name__, elapse)
+        return result
+    return wrappers
+
+@timethis
+def loop():
+    """
+    Sever as doc string
+    :return:
+    """
+    for i in range(100000):
+        pass
+    print('Loop done')
+a = loop()
+print(loop.__name__)
+print(loop.__doc__)
+
+# 9.3 unpack a decorator
+
+original_loop = loop.__wrapped__
+original_loop()
+
+# 9.4 decorator takes arguments
+from functools import wraps
+from datetime import datetime
+
+def timethis(WithDate):
+    def decor(func):
+        @wraps(func)
+        def wrappers(*args, **kwargs):
+            start = time.time()
+            result = func(*args, **kwargs)
+            elapse = time.time() - start
+            if WithDate:
+                print(func.__name__, elapse, datetime.now())
+            else:
+                print(func.__name__, elapse)
+            return result
+        return wrappers
+    return decor
+
+@timethis(False)
+def loop():
+    """
+    Sever as doc string
+    :return:
+    """
+    for i in range(100000):
+        pass
+    print('Loop done')
+loop()
+
+def loop1():
+    """
+    Sever as doc string
+    :return:
+    """
+    for i in range(100000):
+        pass
+    print('Loop done')
+
+loop1 = timethis(True)(loop1)
+loop1()
+
+# 9.6 decortor with optional argument
+from functools import partial
+
+def test_func(a, b, c):
+    print('a:{0} b:{1} c:{2}'.format(a,b,c))
+
+test_func(1,2,3)
+partial_func = partial(test_func, 5)
+partial_func(2,3)
+
+partial_func = partial(test_func, b = 5)
+# partial_func(2,3)
+
+def logged(func=None, *, level=None, name=None, message=None):
+    pass
+
+logged(1)
+logged(1,level=2)
+
+def timethis(func=None, *, WithDate=True):
+    if func is None:
+        return partial(timethis, WithDate=WithDate)
+    @wraps(func)
+    def wrappers(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        elapse = time.time() - start
+        if WithDate:
+            print(func.__name__, elapse, datetime.now())
+        else:
+            print(func.__name__, elapse)
+        return result
+    return wrappers
+
+@timethis
+def loop():
+    for i in range(100000):
+        pass
+    print('Loop done')
+loop()
+
+@timethis(WithDate=False)
+def loop():
+    for i in range(100000):
+        pass
+    print('Loop done')
+loop()
+
+# 9.7 type checking
+
+def typechecking(*typeargs):
+    def checking_func(func):
+        @wraps(func)
+        def wrappers(*args):
+            if len(typeargs) != len(args):
+                raise ValueError
+            for ty, val in zip(typeargs, args):
+                if not isinstance(val, ty):
+                    raise TypeError('{0} is not type {1}'.format(val, ty))
+            result = func(*args)
+            return result
+        return wrappers
+    return checking_func
+
+@typechecking(int, int)
+def add(a, b):
+    return a + b
+add(1, 1)
+
+# 9.8 decorator in class
+
+from functools import wraps
+
+class A:
+
+    def classadecorator(self, func):
+        @wraps(func)
+        def wrappers(*args, **kwargs):
+            print('This is a in class decorator!')
+            result = func(*args, **kwargs)
+            return result
+        return wrappers
+
+a = A()
+@a.classadecorator
+def add(a, b):
+    return a + b
+
+add(1,2)
+
+# 9.9 define decorator as class
+
+class clas_decorator(object):
+    def __init__(self, func):
+        print('In construtor')
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        print(' in callable')
+        return self.wrapper(*args, **kwargs)
+
+    def wrapper(self, *args, **kwargs):
+        print('In class decorator!')
+        result = self.func(*args, **kwargs)
+        return result
+
+@clas_decorator
+def add(a, b):
+    return a + b
+
+add(1,2)
+
+# 9.11 write decorator add arguments to wrapped function
+from functools import wraps
+
+def option_debug(func):
+    @wraps(func)
+    def wrappers(*args, debug=False, **kwargs):
+        if debug:
+            print('Debug mode on')
+        result = func(*args, **kwargs)
+        return result
+    return wrappers
+
+@option_debug
+def spam(a,b,c):
+    print(a,b,c)
+
+spam(1,2,3)
+spam(1,2,3, debug=True)
+
+# 9.12 decorator working on classes
+
+def log_getattribute(cls):
+    # Get the original implementation
+    orig_getattribute = cls.__getattribute__
+
+    # Make a new definition
+    def new_getattribute(self, name):
+        print('getting:', name)
+        return orig_getattribute(self, name)
+
+    # Attach to the class and return
+    cls.__getattribute__ = new_getattribute
+    return cls
+
+# Example use
+@log_getattribute
+class A:
+    def __init__(self,x):
+        self.x = x
+    def spam(self):
+        pass
+
+a = A(42)
+print(a.x)
+a.spam()
+
+#9.13 using a metaclass to control instance creation
+# METACLASS!!!   TYPE of class
+
+class NoInstances(type):
+    def __call__(self, *args, **kwargs):
+        raise TypeError("Can't initalize!")
+
+class spam(metaclass=NoInstances):
+    def __init__(self, x):
+        self.x = x
+
+    @staticmethod
+    def value():
+        print('In value')
+
+spam(6)
+spam.value()
+
+# singleton
+
+class singleton(type):
+
+    def __init__(self, *args, **kwargs):
+        self.instance = None
+        super().__init__(*args, **kwargs)
+
+    def __call__(self, *args, **kwargs):
+        if self.instance:
+            return self.instance
+        else:
+            self.instance = super.__call__(*args, **kwargs)
+            return self.instance
+
+class spam(metaclass=singleton):
+    def __init__(self):
+        print('creating spam')
+
+a = spam()
+b = spam()
+a is b
+
+# 9.17 enforcing coding conventions
+
+class myMeta(type):
+
+    def __new__(cls, clsname, bases, clsdict):
+        for key in clsdict:
+            if key.lower()!=key:
+                raise TypeError()
+        return super().__new__(cls, clsname, bases, clsdict)
+
+class base(metaclass=myMeta):
+    pass
+
+class derived(base):
+    def foo(self):
+        pass
+
+    def Novalid(self):
+        pass
+
+# enforce function and overrided function have same signature
+
+from inspect import signature
+class MatchSignaturesMeta(type):
+    def __init__(self, clsname, bases, clsdict):
+        super().__init__(clsname, bases, clsdict)
+        sup = super(self, self)
+        for name, value in clsdict.items():
+            if name.startswith('_') or not callable(value):
+                continue
+            prev_fn = getattr(sup, name, None)
+            if prev_fn:
+                prev_sg = signature(prev_fn)
+                this_sg = signature(value)
+                if prev_sg!=this_sg:
+                    print("Signature not matched!")
+
+class Root(metaclass=MatchSignaturesMeta):
+    pass
+
+class A(Root):
+    def foo(self, x, y):
+        pass
+
+    def bar(self, x, *, z):
+        pass
+
+class B(A):
+    def foo(self,a,b):
+        pass
+
+    def bar(self, x, z):
+        pass
 
