@@ -949,4 +949,62 @@ class B(A):
 
     def bar(self, x, z):
         pass
+"""
+Threading related
+"""
+import threading
+
+# starting two threads without locks
+a = 1
+def add10000():
+    global a
+    for i in range(10000000):
+        a += 1
+
+
+t1 = threading.Thread(target=add10000)
+t2 = threading.Thread(target=add10000)
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+print(a)
+
+a = 1
+lock = threading.Lock()
+def add_onethousand_threasafe():
+    global a
+    for i in range(1000000):
+        with lock:
+            a += 1
+t1 = threading.Thread(target=add_onethousand_threasafe)
+t2 = threading.Thread(target=add_onethousand_threasafe)
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+print(a)
+
+"""
+Event related
+"""
+import threading, time
+
+first_value_event = threading.Event()
+def producer(event):
+    print("Start producing!")
+    time.sleep(5)
+    event.set()
+
+def consumer(event):
+    event.wait()
+    print("Consuming")
+
+t1 = threading.Thread(target=producer, args=(first_value_event,))
+t2 = threading.Thread(target=consumer, args=(first_value_event,))
+t1.start()
+t2.start()
+
+"""
+"""
 
