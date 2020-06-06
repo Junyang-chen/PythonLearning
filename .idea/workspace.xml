@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b67cbd2-e735-4b8e-b88e-f554b6f192e6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Algo.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AlgoUnitTest.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/DivideAndConquer.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Graph.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/HullWhiteOneFactor.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/MedianOfTwoSortedArray.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/PythonCookbook.py" afterPath="$PROJECT_DIR$/PythonCookbook.py" />
+      <change beforePath="$PROJECT_DIR$/Algo.py" afterPath="$PROJECT_DIR$/Algo.py" />
+      <change beforePath="$PROJECT_DIR$/AlgoUnitTest.py" afterPath="$PROJECT_DIR$/AlgoUnitTest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,23 +25,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Core_Python_Programming.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core_Python_Programming.py">
+      <file leaf-file-name="PythonCookbook.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonCookbook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2775">
-              <caret line="111" column="9" lean-forward="false" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+            <state relative-caret-position="17993">
+              <caret line="948" column="0" lean-forward="false" selection-start-line="948" selection-start-column="0" selection-end-line="948" selection-end-column="0" />
+              <folding>
+                <element signature="e#67#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Regex.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Regex.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PythonCookbook.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PythonCookbook.py">
+      <file leaf-file-name="HullWhiteOneFactor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HullWhiteOneFactor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25150">
-              <caret line="1007" column="3" lean-forward="false" selection-start-line="1007" selection-start-column="3" selection-end-line="1007" selection-end-column="3" />
+            <state relative-caret-position="1748">
+              <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
               <folding>
-                <element signature="e#67#79#0" expanded="true" />
+                <element signature="e#45#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,30 +62,58 @@
       <file leaf-file-name="Algo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="7828">
+              <caret line="412" column="22" lean-forward="false" selection-start-line="412" selection-start-column="22" selection-end-line="412" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlgoUnitTest.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AlgoUnitTest.py">
+      <file leaf-file-name="MedianOfTwoSortedArray.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MedianOfTwoSortedArray.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="99">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://E:/Anaconda/Lib/unittest/main.py">
+      <file leaf-file-name="DivideAndConquer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DivideAndConquer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6350">
-              <caret line="259" column="10" lean-forward="false" selection-start-line="259" selection-start-column="10" selection-end-line="259" selection-end-column="10" />
+            <state relative-caret-position="190">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graph.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-917914314/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69008">
+              <caret line="3632" column="8" lean-forward="false" selection-start-line="3632" selection-start-column="8" selection-end-line="3632" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AlgoUnitTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AlgoUnitTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -91,14 +134,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>*</find>
+      <find>asser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,13 +156,18 @@
         <option value="D:/OptionPricing/MonteCarloSim.py" />
         <option value="$PROJECT_DIR$/pandas_learning.py" />
         <option value="$PROJECT_DIR$/PythonCookbook.py" />
-        <option value="$PROJECT_DIR$/Algo.py" />
         <option value="$PROJECT_DIR$/AlgoUnitTest.py" />
+        <option value="$PROJECT_DIR$/HullWhiteOneFactor.py" />
+        <option value="$PROJECT_DIR$/Algo.py" />
+        <option value="$PROJECT_DIR$/DivideAndConquer.py" />
+        <option value="$PROJECT_DIR$/Graph.py" />
+        <option value="$PROJECT_DIR$/MedianOfTwoSortedArray.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
+    <option name="x" value="463" />
+    <option name="y" value="-8" />
     <option name="width" value="1288" />
     <option name="height" value="685" />
   </component>
@@ -138,7 +187,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,11 +198,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="E:/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../marbles" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -176,20 +225,92 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests for AlgoUnitTest.SecondMiniTest">
-    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.MedianOfTwoSortedArray">
+    <configuration name="Algo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/monkeypatching_class_definitions" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Pythonlearning" />
-      <option name="SCRIPT_NAME" value="D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/monkeypatching_class_definitions/example.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="DivideAndConquer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pythonlearning" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DivideAndConquer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pythonlearning" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="HullWhiteOneFactor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pythonlearning" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HullWhiteOneFactor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="MedianOfTwoSortedArray" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pythonlearning" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MedianOfTwoSortedArray.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,80 +450,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Pythonlearning" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;AlgoUnitTest.MaxSubarrayTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest.test_normalList1" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Pythonlearning" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;AlgoUnitTest.MaxSubarrayTest.test_normalList1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Nosetests for AlgoUnitTest.SecondMiniTest" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Pythonlearning" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;AlgoUnitTest.SecondMiniTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Nosetests in AlgoUnitTest.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Pythonlearning" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/AlgoUnitTest.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.example" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests in AlgoUnitTest.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests for AlgoUnitTest.MaxSubarrayTest" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests for AlgoUnitTest.MaxSubarrayTest.test_normalList1" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests for AlgoUnitTest.SecondMiniTest" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Algo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.HullWhiteOneFactor" />
+      <item index="2" class="java.lang.String" itemvalue="Python.DivideAndConquer" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Graph" />
+      <item index="4" class="java.lang.String" itemvalue="Python.MedianOfTwoSortedArray" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests for AlgoUnitTest.SecondMiniTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for AlgoUnitTest.MaxSubarrayTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests for AlgoUnitTest.MaxSubarrayTest.test_normalList1" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in AlgoUnitTest.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.example" />
+        <item index="0" class="java.lang.String" itemvalue="Python.MedianOfTwoSortedArray" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Graph" />
+        <item index="2" class="java.lang.String" itemvalue="Python.DivideAndConquer" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Algo" />
+        <item index="4" class="java.lang.String" itemvalue="Python.HullWhiteOneFactor" />
       </list>
     </recent_temporary>
   </component>
@@ -438,34 +499,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_for_AlgoUnitTest_MaxSubarrayTest - 2018.01.19 at 00h 29m 31s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_AlgoUnitTest_MaxSubarrayTest - 2018.01.19 at 00h 33m 23s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_AlgoUnitTest_MaxSubarrayTest - 2018.01.19 at 00h 33m 43s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_AlgoUnitTest_MaxSubarrayTest - 2018.01.19 at 00h 34m 00s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_AlgoUnitTest_MaxSubarrayTest - 2018.01.19 at 00h 36m 17s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_AlgoUnitTest_MaxSubarrayTest_test_normalList1 - 2018.01.19 at 00h 34m 28s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest.test_normalList1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_AlgoUnitTest_MaxSubarrayTest_test_normalList1 - 2018.01.19 at 00h 35m 18s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.MaxSubarrayTest.test_normalList1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_AlgoUnitTest_SecondMiniTest - 2018.01.19 at 00h 37m 11s.xml">
-      <configuration name="Nosetests for AlgoUnitTest.SecondMiniTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.01.18 at 23h 05m 18s.xml">
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 22h 04m 35s.xml">
       <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.01.18 at 23h 05m 50s.xml">
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 22h 05m 06s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 22h 42m 21s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 22h 42m 27s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 23h 04m 25s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 23h 04m 39s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 23h 06m 14s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 23h 06m 31s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 23h 06m 38s.xml">
+      <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_AlgoUnitTest_py - 2018.02.04 at 23h 06m 49s.xml">
       <configuration name="Nosetests in AlgoUnitTest.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -479,19 +540,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13277134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25108695" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24130435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27934784" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2765625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4423913" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39673913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -538,26 +598,56 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Algo.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/AlgoUnitTest.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="33" />
+          <line>369</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Algo.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="34" />
+          <line>370</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DivideAndConquer.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>len(q)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>q.qsize()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>timeInput = [datetime.datetime.strptime(str(i[0].value), '%m%d%Y') for i in list(ws['$AB$12':'$AB$45'])]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>timeInput = [datetime.strptime(i[0].value, '%m%d%Y') for i in list(ws['$AB$12':'$AB$45'])]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Algo.FindMedian([1])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>input_list[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>q+j-1</expression-string>
         <language-id>Python</language-id>
@@ -576,16 +666,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Regex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#65#96#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gone_with_the_Wind-Margaret_Mitchell.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -606,61 +686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#65#96#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gone_with_the_Wind-Margaret_Mitchell.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core_Python_Programming.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2420">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#65#96#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gone_with_the_Wind-Margaret_Mitchell.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core_Python_Programming.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2420">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Regex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#65#96#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,28 +772,81 @@
     </entry>
     <entry file="file://D:/OptionPricing/MonteCarloSim.py" />
     <entry file="file://$PROJECT_DIR$/../Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/7/carrying_extra_state_with_callback_functions/example.py" />
-    <entry file="file://$PROJECT_DIR$/pandas_learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Core_Python_Programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2775">
+        <state relative-caret-position="0">
           <caret line="111" column="9" lean-forward="false" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://H:/Anaconda3/Lib/abc.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_classes/example2.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_classes/example3.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_part_of_a_class/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/applying_decorators_to_class_and_static_methods/example.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/avoiding_repetitive_property_methods/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/capturing_class_attribute_definition_order/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_a_metaclass_that_takes_optional_arguments/example.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_classes_programmatically/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_classes/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_part_of_a_class/example2.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/disassembling_python_byte_code/example.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/enforcing_an_argument_signature/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/enforcing_coding_conventions_in_classes/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/enforcing_type_checking_on_a_function_using_a_decorator/example.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/executing_code_with_local_side_effects/example.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/initializing_class_members_at_definition_time/example.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/monkeypatching_class_definitions/example.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/using_metaclasses_to_control_instance_creation/example1.py" />
+    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/using_metaclasses_to_control_instance_creation/example2.py" />
+    <entry file="file://E:/Anaconda/Lib/unittest/main.py" />
+    <entry file="file://E:/Anaconda/Lib/unittest/case.py" />
+    <entry file="file://E:/Software/Anaconda/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="604" column="0" lean-forward="false" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pandas_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Regex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state relative-caret-position="266">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonCookbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17993">
+          <caret line="948" column="0" lean-forward="false" selection-start-line="948" selection-start-column="0" selection-end-line="948" selection-end-column="0" />
           <folding>
-            <element signature="e#65#96#0" expanded="false" />
+            <element signature="e#67#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Software/Anaconda/Lib/_strptime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="361" column="0" lean-forward="false" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HullWhiteOneFactor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+          <folding>
+            <element signature="e#45#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,179 +859,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_classes/example2.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/-917914314/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_classes/example3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_part_of_a_class/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/applying_decorators_to_class_and_static_methods/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/avoiding_repetitive_property_methods/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/capturing_class_attribute_definition_order/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_a_metaclass_that_takes_optional_arguments/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_classes_programmatically/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_classes/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/defining_decorators_as_part_of_a_class/example2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/disassembling_python_byte_code/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/enforcing_an_argument_signature/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/enforcing_coding_conventions_in_classes/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/enforcing_type_checking_on_a_function_using_a_decorator/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/executing_code_with_local_side_effects/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/initializing_class_members_at_definition_time/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/monkeypatching_class_definitions/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/using_metaclasses_to_control_instance_creation/example1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python3/Python-Cookbook-3rd-Ed-2013/Code samples/src/9/using_metaclasses_to_control_instance_creation/example2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythonCookbook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25150">
-          <caret line="1007" column="3" lean-forward="false" selection-start-line="1007" selection-start-column="3" selection-end-line="1007" selection-end-column="3" />
-          <folding>
-            <element signature="e#67#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Anaconda/Lib/unittest/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6350">
-          <caret line="259" column="10" lean-forward="false" selection-start-line="259" selection-start-column="10" selection-end-line="259" selection-end-column="10" />
+        <state relative-caret-position="69008">
+          <caret line="3632" column="8" lean-forward="false" selection-start-line="3632" selection-start-column="8" selection-end-line="3632" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Anaconda/Lib/unittest/case.py">
+    <entry file="file://$PROJECT_DIR$/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1016" column="8" lean-forward="false" selection-start-line="1016" selection-start-column="8" selection-end-line="1016" selection-end-column="8" />
+        <state relative-caret-position="646">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algo.py">
+    <entry file="file://$PROJECT_DIR$/DivideAndConquer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AlgoUnitTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MedianOfTwoSortedArray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7828">
+          <caret line="412" column="22" lean-forward="false" selection-start-line="412" selection-start-column="22" selection-end-line="412" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

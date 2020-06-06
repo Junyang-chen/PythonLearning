@@ -51,5 +51,16 @@ class MaxSubarrayTest(unittest.TestCase):
         self.assertEqual(Algo.MaxSubArray([1,3,6,-1]), 10)
         self.assertEqual(Algo.MaxSubArray([1,3,5,-7,-9,2,4,-6,8]), 9)
 
+class FindMedianTest(unittest.TestCase):
+    def test_empty(self):
+        self.assertEqual(Algo.FindMedian([]), None)
+
+    def test_singleValue(self):
+        self.assertEqual(Algo.FindMedian([1]), 1)
+
+    def test_normalList1(self):
+        self.assertEqual(Algo.FindMedian([1,3,6,-1, 0]), 1)
+        self.assertEqual(Algo.FindMedian([1,3,5,7,9,2,4,6,8]), 5)
+
 if __name__ == '__main__':
     unittest.main()
