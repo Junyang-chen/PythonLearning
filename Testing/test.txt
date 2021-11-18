@@ -1,3 +1,5 @@
+python -m doctest Testing\test.txt
+
 This is a simple doctest that checks some of Python's arithmetic   operations.
 >>> 2 + 2
 4
